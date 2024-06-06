@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website Design</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+   
+    body {    
+        background-image: url('{% static "car-1.jpg" %}');
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 10px;
+        
+    }
+   
+
+</style>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="web.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                
+                    <li><a href="web.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">CAR</a></li>
+                    <li><a href="{% url 'signup'%}" class="btn">Sign-Up</a></li>
+                    <li><a href="{% url 'login'%}" class="btn">LogIn</a></li>
+                    <li><a href="{% url 'join'%}" class="btn">join us</a></li>
+                    
+                   
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <dic class="text-box">
+         
+        <h1>GET YOUR DREAM CAR</h1>
+        <p>You can Rent your Dream car.Enjoy your stylish and comfortable life with us. 
+        </p>
+        <a href="" class="hero-btn">Reserve Your Car.</a>
+    </dic>
+</div>
+
+    </section>
+</div>
+    
+
+
+<section class="course">
+    <h1>Why Us ?</h1>
+    <p>We provide the best services as per your need</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Time saving</h3>
+            <p> Cars have seen significant technological advancements over the years. These include improvements in safety features such as airbags, anti-lock braking systems (ABS)</p>
+         </div>
+        <div class="course-col">
+            <h3>Best Service</h3>
+            <p> Cars have seen significant technological advancements over the years. These include improvements in safety features such as airbags, anti-lock braking systems (ABS)</p>
+        </div>
+        <div class="course-col">
+            <h3>Top Model Cars</h3>
+            <p>Cars have seen significant technological advancements over the years. These include improvements in safety features such as airbags, anti-lock braking systems (ABS)</p>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="campus">
+    <h1>Top Models</h1>
+    <p>Cars have seen significant technological advancements over the years. </p>
+
+<div class="row">
+    <div class="campus-col">
+        <img src="{% static 'car-1.jpg' %}" alt="My image">
+        <div class="layer">
+            <h3>MERCEDES<br>$80/Day</h3>
+        </div>
+    </div>
+    <div class="campus-col">
+        <img src="{% static 'car-4.jpg' %}" alt="My image">
+        <div class="layer">
+            <h3>MUSTANG<br>$90/Day</h3>
+        </div>
+    </div>
+    <div class="campus-col">
+        <img src="{% static 'car-3.jpg' %}" alt="My image">
+        <div class="layer">
+            <h3> BUCCATI<br>$100/Day</h3>
+        </div>
+    </div>
+   
+   
+    
+</div>
+
+</section>
+
+
+<section class="facilities">
+    <h1>OUR FACILITIES</h1>
+    <p>The facilities available at IIT campuses are designed to support academic pursuits.</p>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static 'image_2.jpg' %}" alt="My image">
+            <h3>On Time service</h3>
+            <p>  Cars are subject to various regulations and safety standards imposed by governments </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'image_6.jpg' %}" alt="My image">
+            <h3>Emergency supplies provided</h3>
+            <p>  Cars are subject to various regulations and safety standards imposed by governments </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'image_5.jpg' %}" alt="My image">
+            <h3>cleaned and hygenic</h3>
+            <p> Cars are subject to various regulations and safety standards imposed by governments </p>
+        </div>
+    </div>
+</section>
+
+<section class="textimonials">
+    <h1>What Our Client Say's</h1>
+    <p>These are just some of our experieced clients </p>
+    <div class="row">
+        <div class="textimonials-col">
+            <img src="{% static 'person_4.jpg' %}" alt="My image">
+            <div>
+                <p> Specialized research centers, institutes, and laboratories focusing on specific areas of study or interdisciplinary research collaborations.</p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+               
+            </div>
+
+        </div>
+        <div class="textimonials-col">
+            <img src="{% static 'person_2.jpg' %}" alt="My image">
+            <div>
+                <p> Specialized research centers, institutes, and laboratories focusing on specific areas of study or interdisciplinary research collaborations.</p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-stroke"></i>
+            </div>
+
+  
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12	featured-top">
+                <div class="row no-gutters">
+                    <div class="box">
+                      <div class="col-md-4 d-flex align-items-center">
+                          <form action="#" class="request-form ftco-animate bg-primary">
+                      <h2>Make your trip now...</h2>
+                            <div class="form-group">
+                                <label for="" class="label">Pick-up location</label>
+                                <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="label">Drop-off location</label>
+                                <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                            </div>
+                            <div class="d-flex">
+                                <div class="form-group mr-2">
+                        <label for="" class="label">Pick-up date</label>
+                        <input type="date" class="form-control" id="book_on_date" placeholder="Date">
+                       
+                      </div>
+                      <div class="form-group ml-2">
+                        <label for="" class="label">Drop-off date</label>
+                        <input type="date" class="form-control" id="book_off_date" placeholder="Date">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="label">Pick-up time</label>
+                    <input type="time" class="form-control" id="time_pick" placeholder="Time">
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="label">Pick-off time</label>
+                    <input type="time" class="form-control" id="time_pick" placeholder="Time">
+                  </div>
+                    <div class="form-group">
+                      <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4">
+                    </div>
+                        </form>
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                          <div class="services-wrap rounded-right w-100">
+                              <h3 class="heading-section mb-4"></h3>
+                              <div class="row d-flex mb-4">
+                          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services w-100 text-center">
+                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                              <div class="text w-100">
+                                <h3 class="heading mb-2"></h3>
+                            </div>
+                            </div>      
+                          </div>
+                          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services w-100 text-center">
+                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+                              <div class="text w-100">
+                                <h3 class="heading mb-2"></h3>
+                              </div>
+                            </div>      
+                          </div>
+                          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services w-100 text-center">
+                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+                              <div class="text w-100">
+                                <h3 class="heading mb-2"></h3>
+                              </div>
+                            </div>      
+                          </div>
+                        </div>
+                        <p><a href="#" class="btn btn-primary py-3 px-4"></a></p>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+</section>
+
+<section class="cta">
+    <h1>Want to be a part of us..</h1>
+    <a href="" class="hero-btn">Join Us</a>
+</section>
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p> car are so safe that every clientssuggest us to there frnds and family <br>enhance our relation with the clients.</p>
+    <div class="icons">
+        <i class="fa fa-brands fa-facebook"></i>
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-brands fa-twitter"></i>
+        <i class="fa fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made By @Abhishek Sutar.</p>
+
+
+</section>
+
+
+<!---------js menu------>
+<script>
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>    
+</body>
+</html>
+  

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the container */
+.container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background:transparent;
+}
+
+/* Apply styles to the form box */
+.apply_box {
+    background :transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the form title */
+.apply_box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to form labels */
+.form_control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Apply styles to form inputs and textareas */
+.form_control input,
+.form_control textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+/* Apply styles to the button */
+.button_container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_container button:hover {
+    background-color: #0056b3;
+}
+
+body {
+
+background-image: url('{% static "car-2.jpg" %}');
+background-repeat: no-repeat;
+position: relative;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+border-radius: 10px;
+
+
+}
+
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'style.css '%}">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1> Sign-Up
+                <span class="title_small"></span>
+            </h1>
+            <form method="post" action="/signup/">
+                {% csrf_token %}
+               
+            
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">First Name</label>
+                        <input
+                         id="first_name"
+                         name="first_name"
+                         placeholder="Enter First Name"/>
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label>
+                        <input 
+                         id="last_name" 
+                         name="last_name" 
+                         placeholder="Enter Last Name"/>
+                    </div>
+                     <div class="form_control">
+                        <label for="email">Email</label>
+                        <input 
+                         type="email"
+                         id="email" 
+                         name="email" 
+                         placeholder="Enter Email"/>
+                    </div>
+                    
+                    
+                    <div class="form_control">
+                        <label for="city">City</label>
+                        <input 
+                         id="city" 
+                         name="city" 
+                         placeholder="Enter City Name"/>
+                    </div>
+                    <div class="form_control">
+                        <label for="pincode">Pincode</label>
+                        <input
+                         type="number" 
+                         id="pincode" 
+                         name="pincode" 
+                         placeholder="Enter Pincode"/>
+                    </div>
+                   
+                    <div class="form_control">
+                        <label for="upload">Upload Your License</label>
+                        <input 
+                         type="file"
+                         id="upload" 
+                         name="upload" 
+                         placeholder="Enter Last Name"/>
+                    </div>
+
+
+                </div>
+                <div class="button_container">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
